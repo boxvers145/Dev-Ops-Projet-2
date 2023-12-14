@@ -24,3 +24,20 @@ jobs:
       run: |
         npm install
         npx webpack
+
+    - name: Format code
+      run: npm run format
+
+    - name: Lint code
+      run: npm run lint
+
+    - name: Test with coverage
+      run: npm test -- --coverage
+      env:
+        CI: true
+
+    - name: Build
+      run: npm run build
+
+    - name: Display success message
+      run: echo "PIPELINE SUCCESS WITHOUT ERRORS"
