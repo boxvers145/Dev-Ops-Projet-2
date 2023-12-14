@@ -20,7 +20,7 @@ jobs:
         run: npm run prettier:fix
 
       - name: Lint code
-        run: npm run lint
+        run: npm run lint:fix
 
       - name: Test with coverage
         run: npm test -- --coverage
