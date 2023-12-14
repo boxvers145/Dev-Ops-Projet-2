@@ -11,7 +11,7 @@
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
         "code:fix": "prettier --write . && eslint --fix .",
-        "build": "webpack ./src/index.js --output ./dist/main.js"
+        "build": "webpack ./index.js --output ./dist/main.js"
     },
     "devDependencies": {
         "eslint": "^8.53.0",
