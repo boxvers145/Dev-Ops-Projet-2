@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-  entry: './greet.js', // point d'entrée de votre application
+  entry: './index.js', // point d'entrée de votre application
   output: {
     filename: 'main.js', // nom du fichier de sortie
     path: path.resolve(__dirname, 'dist') // dossier de sortie
