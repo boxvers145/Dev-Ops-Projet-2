@@ -17,7 +17,7 @@ jobs:
         run: npm install
 
       - name: Format code
-        run: npm run format
+        run: npm run code:fix
 
       - name: Lint code
         run: npm run lint
