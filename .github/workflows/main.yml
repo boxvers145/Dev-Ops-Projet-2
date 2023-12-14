@@ -16,8 +16,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Format code
-        run: npm run code:fix
+      - name: Prettier
+        run: npm run prettier:fix
 
       - name: Lint code
         run: npm run lint
