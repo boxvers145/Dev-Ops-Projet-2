@@ -21,9 +21,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Display start time
-        run: echo "Start time: $(date)"
-
       - name: Format code
         run: npm run format
 
@@ -37,9 +34,6 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Display end time
-        run: echo "End time: $(date)"
 
       - name: Display success message
         run: echo "PIPELINE SUCCESS WITHOUT ERRORS"
