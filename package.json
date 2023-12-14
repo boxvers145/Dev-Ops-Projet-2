@@ -10,7 +10,8 @@
         "prettier:fix": "prettier --write .",
         "lint": "eslint .",
         "lint:fix": "eslint --fix .",
-        "code:fix": "prettier --write . && eslint --fix ."
+        "code:fix": "prettier --write . && eslint --fix .",
+        "build": "webpack"
     },
     "devDependencies": {
         "eslint": "^8.53.0",
