@@ -16,9 +16,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      -name: Display start time
-        run: |
-        echo " 🕰️Starting pipeline at $(date +"%H:%M:%S %Z")"
+      - name: Display start time
+        run: echo " 🕰️Starting pipeline at $(date +"%H:%M:%S %Z")"
 
       - name: Prettier
         run: npm run prettier:fix
