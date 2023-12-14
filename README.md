@@ -11,7 +11,7 @@ Travail de recherche , mettre en place de l'integration continue avec les GitHub
 ### Pré-requis :
 - Sur base de votre mini-projet 1 (TDD)
 - Usage de [JEST](https://jestjs.io/docs/getting-started) obligatoire
-- Utilisation pulls requests
+- Utilisation pulls requests 
 
 
 ### Ajouter ce fichier MD à votre mini-projet-1
