@@ -32,6 +32,9 @@ jobs:
 
       - name: Build
         run: npm run build
+      
+      - name: Display start time
+        run: echo " 🕰️Finishing pipeline at $(date +"%H:%M:%S %Z")"
 
       - name: Display success message
         run: echo "PIPELINE SUCCESS WITHOUT ERRORS"
