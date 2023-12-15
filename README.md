@@ -67,4 +67,4 @@ Liens utiles:
 <installer le programme, créer la commande dans le fichier package.json/script, l integrer a la pipeline. Savoir a quel moment appeler le programme dans la pipeline>
 ```
 
-PS :
+PS : PULL REQUEST NON EFFECTUE POUR PROFESSEUR
