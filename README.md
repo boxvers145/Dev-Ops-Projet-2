@@ -44,26 +44,27 @@ Liens utiles:
 
 - Décrivez brièvement ce que fait votre fichier YML.  
 ```bash
-<votre réponse ici>
+<a chaque push ou pull request, il éxecute les commandes qu on lui a donner, par exemple il fait le prettier:fix, ensuite il build notre application>
 ```
 - En particulier : à quoi sert le “on” ? dans votre fichier YML ?  Quelle est la différence entre “on push” et “on pull request”. Que conseilleriez-vous comme option parmi ces 2 options à un groupe de développeurs junior ? Pourquoi ? 
 ```bash
-<votre réponse ici>
+<le ON permet de dire au fichier d exectuer ces commandes sous certaine condition, dans notre exemple, lorsque on va push ou faire un pull request. ON PUSH s ignifie que les commandes vont s exectuer a chaque fois qu il y a un push et ON PULL REQUEST, lorsque une pull request sera créer. Pour le groupe de dév junior ça dépend, si ils font souvent des push c est mieux d utiliser le ON PUSH mais ils risquent de surcharger la pipeline, donc je conseille quand même de le faire en ON PULL REQUEST, surtout qu ils vont travailler avec des branches, mais ils sont obliger de créer une pull request>
 ```
 - Quelle est la différence entre run et run_on ?  Expliquez par rapport à votre pipeline.  
 ```bash
-<votre réponse ici>
+<RUNS-ON c est pour préciser sur quelle machine virtuelle on doit lancer les commandes. RUN c est pour executer les commandes>
 ```
 - Quelle est la différence entre “use” et “run”. Expliquez par rapport à votre pipeline. 
 ```bash
-<votre réponse ici>
+<RUN : permet d executer des actions dans notre pipeline comme des script ou commande shell. USE : permet d executer des actions dans notre pipeline venant de source externe>
 ```
 - Peut-on intervertir différentes étapes dans votre pipeline ? Que votre réponse soit oui ou non, expliquez par rapport à votre pipeline. 
 ```bash
-<votre réponse ici>
+<Non, si on fait d abord le build puis on fait les commandes pour verifier nos test, ou faire lint:fix ou prettier:fix et qu il y aura des problemes, ça ne servira a rien car on aura déjà build notre application, il y a un ordre a suivre>
 ```
 - Je veux ajouter un test de sécurité sur mon pipeline en exécutant le programme secure_app. Que devrais-je faire ?  Quelles questions devriez-vous vous poser ? 
 ```bash
-<votre réponse ici>
+<installer le programme, créer la commande dans le fichier package.json/script, l integrer a la pipeline. Savoir a quel moment appeler le programme dans la pipeline>
 ```
 
+PS : 
